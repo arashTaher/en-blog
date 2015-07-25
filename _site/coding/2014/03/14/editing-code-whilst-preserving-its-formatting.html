@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en-us">
+<head>
+   <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+   <title>Editing C# AST, Yet preserving its formatting</title>
+   <meta name="author" content="Arash Taher" />
+   <!-- <link href="http://feeds.feedburner.com/tom-preston-werner" rel="alternate" title="Tom Preston-Werner" type="application/atom+xml" /> -->
+
+   <!-- syntax highlighting CSS -->
+   <link rel="stylesheet" href="/css/syntax.css" type="text/css" />
+
+   <!-- Homepage CSS -->
+   <link rel="stylesheet" href="/css/screen.css" type="text/css" media="screen, projection" />
+</head>
+<body>
+
+<div class="site">
+  <div class="title">
+    <a href="http://arashTaher.ir">Arash Taher</a>
+    <a href="http://fa.arashTaher.ir" class="extra">Fa</a>
+    <a href="http://en.arashTaher.ir" class="extra">En</a>
+  </div>
+  
+  <h1>Editing C# AST, Yet preserving its formatting</h1>
+
+<div id="post">
+	<p>Earlier in one of my <a href="http://arashtaher.wordpress.com/2013/09/27/prettyprint/">posts</a>, I explained how can you reformat your code using NRefactory library. But, as matter of fact what you really want in your day to day task is not reformatting code, au-contraire, you want its formatting to be preserved. You don't want to commit dozens of files to your repository merely because their formatting's changed !</p>
+
+<p>Now this question arises that whether is this quest possible in NRefactory or not ? Well of course it is, and it's really easy. ( Once you know what you have to do, who you have to call and ... ) BTW, NRefactory is an essential part of SharpDevelop IDE and we don't want our idea to reformat our code every time we use intellisens.</p>
+
+<p>NRefactory has a class that's dedicated to do such and it's called DocumentScript.</p>
+
+<p>Document scripts works by manipulating IDocument objects, which are specialization of string builder class. This class gives you this opportunity to change your document based on text location that were already stored in syntax tree. It also keeps track of latest modification and map them to current document, so you don't have to worry about whether multiple changes on the same document will be applied correctly or not.</p>
+
+<div class="highlight"><pre><code class="language-csharp" data-lang="csharp"><span class="n">IDocument</span> <span class="n">document</span> <span class="p">=</span> <span class="k">new</span> <span class="n">StringBuilderDocument</span><span class="p">(</span><span class="s">&quot;Your code source&quot;</span><span class="p">);</span>
+<span class="n">CSharpFormattingOptions</span> <span class="n">policy</span> <span class="p">=</span> <span class="n">FormattingOptionsFactory</span><span class="p">.</span><span class="n">CreateAllman</span><span class="p">();</span>
+<span class="kt">var</span> <span class="n">options</span> <span class="p">=</span> <span class="k">new</span> <span class="n">TextEditorOptions</span><span class="p">();</span>
+
+<span class="kt">var</span> <span class="n">script</span> <span class="p">=</span> <span class="k">new</span> <span class="n">DocumentScript</span><span class="p">(</span><span class="n">document</span><span class="p">,</span> <span class="n">policy</span><span class="p">,</span> <span class="n">options</span><span class="p">);</span></code></pre></div>
+
+
+<p>Now you can use methods like Replace, Remove, InsertAfter and etc. on you AST. It works with both AST nodes as well as offsets.
+<a href="http://arashtaher.files.wordpress.com/2014/03/script.png"><img src="http://arashtaher.files.wordpress.com/2014/03/script.png?w=300" alt="script" /></a></p>
+
+<p>Beside that, there are some predefined methods on scripts:</p>
+
+<div class="highlight"><pre><code class="language-csharp" data-lang="csharp"><span class="n">script</span><span class="p">.</span><span class="n">ChangeModifier</span><span class="p">(</span><span class="n">declaration</span><span class="p">,</span> <span class="n">Modifiers</span><span class="p">.</span><span class="n">Public</span><span class="p">);</span></code></pre></div>
+
+
+
+
+</div>
+
+<div id="related">
+  <h2>Related Posts</h2>
+  <ul class="posts">
+    
+      <li><span>28 Sep 2014</span> &raquo; <a href="/coding/en/programming/software%20engineering/2014/09/28/essential-skills.html">Essential skills that we didn't learn in university</a></li>
+    
+      <li><span>02 Apr 2014</span> &raquo; <a href="/codes/2014/04/02/path-navigator.html">Path Navigator</a></li>
+    
+      <li><span>11 Mar 2014</span> &raquo; <a href="/42/2014/03/11/what-wronge-with-rss-readers.html">What Wronge With RSS Readers</a></li>
+    
+  </ul>
+</div>
+
+  
+  <div class="footer">
+    <div class="contact">
+      <p>
+        Arash Taher<br />
+      </p>
+    </div>
+    <div class="contact">
+      <p>
+        <a href="http://github.com/arashTaher/">Github</a><br />
+        <a href="http://twitter.com/arash_taher/">Twitter</a><br />
+        <a href="http://plus.goolge.com/+arashTaher">Google plus</a><br />
+      </p>
+    </div>
+    <div class="rss">
+		<!-- <a href="http://feeds.feedburner.com/tom-preston-werner"> <img src="/images/rss.png" alt="Subscribe to RSS Feed" /> </a> -->
+    </div>
+  </div>
+</div>
+
+	<a href="https://github.com/arashTaher"><img style="position: absolute; top: 0; left: 0; border: 0;" src="https://camo.githubusercontent.com/c6286ade715e9bea433b4705870de482a654f78a/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f6c6566745f77686974655f6666666666662e706e67" alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_left_white_ffffff.png"></a>
+</body>
+</html>

@@ -1,0 +1,501 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+ 
+ <title>Arash's Persian blog</title>
+ <link href="http://en.arashTaher.ir/atom.xml" rel="self"/>
+ <link href="http://en.arashTaher.ir"/>
+ <updated>2015-07-25T22:43:11+04:30</updated>
+ <id>http://en.arashTaher.ir/</id>
+ <author>
+   <name>Arash Taher</name>
+   <!-- <email></email> -->
+ </author>
+
+ 
+ <entry>
+   <title>Essential skills that we didn't learn in university</title>
+   <link href="http://en.arashTaher.ir/coding/en/programming/software%20engineering/2014/09/28/essential-skills.html"/>
+   <updated>2014-09-28T21:54:10+03:30</updated>
+   <id>http://en.arashTaher.ir/coding/en/programming/software%20engineering/2014/09/28/essential-skills</id>
+   <content type="html">&lt;p&gt;It&#39;s been more than a year that I&#39;m monkey coding in a some-how large scale company and getting my head around real coding. In a year that I spend in industry I found some of most important tools and concepts that I use in my every day job, are the the ones that I didn&#39;t heard a word about them in school. Here&#39;s the three most important God-knows-why-they-do-not-teach-us-in-university things that are at top of my head&lt;/p&gt;
+
+&lt;p&gt;First and foremost is &lt;strong&gt;TDD&lt;/strong&gt; : I can&#39;t even remember how did I wrote programs without unit tests, I literally can&#39;t. I mean did we just open up an editor and start writing code ? How did we change the code ? How were we confident about it working as expected ? All we learned was waterfall design and UML. Heaven forbid !
+:&lt;a href=&quot;https://arashtaher.files.wordpress.com/2014/09/tdd2.jpg&quot;&gt;&lt;img src=&quot;http://arashtaher.files.wordpress.com/2014/09/tdd2.jpg&quot; alt=&quot;tdd2&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Second one is &lt;strong&gt;Version control&lt;/strong&gt; : It&#39;s no longer about code bases of two or three hundreds lines of throw-away code that you would normally do for your final projects in university, We&#39;re now talking about thousands lines of code. Version control is the only way that you cope with immense amount of complexity in large code bases and it also helps me to take baby steps toward a solution.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://arashtaher.files.wordpress.com/2014/09/vcs1.jpg&quot;&gt;&lt;img src=&quot;http://arashtaher.files.wordpress.com/2014/09/vcs1.jpg?w=300&quot; alt=&quot;vcs&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://arashtaher.files.wordpress.com/2014/09/refactoring.jpg&quot;&gt;&lt;img src=&quot;http://arashtaher.files.wordpress.com/2014/09/refactoring.jpg?w=234&quot; alt=&quot;refactoring&quot; /&gt;&lt;/a&gt;And finally the third one, &lt;strong&gt;Refactoring&lt;/strong&gt; : In university what matters is you can provide expected behavior, before project deadline. After that your code gonna be worthless. No one else will read it, you&#39;re not expected to add more features and who gives a damn about bugs ? ( They just don&#39;t have to pop up during presentation )
+For me refactoring is synonym to responsibility. Your code is your responsibility and you have to take good care of it.&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>Path Navigator</title>
+   <link href="http://en.arashTaher.ir/codes/2014/04/02/path-navigator.html"/>
+   <updated>2014-04-02T21:56:57+04:30</updated>
+   <id>http://en.arashTaher.ir/codes/2014/04/02/path-navigator</id>
+   <content type="html">&lt;p&gt;A couple of month ago I started a tiny program as a hobby that would let you to easily open new directories and navigate between them without moving your hand off your keyboard. It was an attempt to eliminate mouse in this process, yet making it real simple by giving auto-completion. Kind of like tab-completion in Bash, but now for Windows Explorer.&lt;/p&gt;
+
+&lt;p&gt;I&#39;m using it every day, it works seamless and although it seems quite naive, but it has become a must-have in my toolbox ( I can&#39;t stress enough how much I loathe mouse ! ). A few days ago I spend time to polish it a little and &lt;a href=&quot;http://bit.ly/1j03s71&quot;&gt;republish it&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;A few bug are fixed and UI has changed dramatically ( although there&#39;s barely such a thing as UI in this program ). Borders removed and you can choose to have Van goghs&#39; starry night as background of the windows :)&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://arashtaher.files.wordpress.com/2014/04/navigator.png&quot;&gt;&lt;img src=&quot;http://arashtaher.files.wordpress.com/2014/04/navigator.png?w=604&quot; alt=&quot;navigator&quot; /&gt;&lt;/a&gt;
+As opposed to always, I decided not to upload it in Ge.tt and instead put it in my Dropbox and give links to the directory that contains the program. In this way I can easily update files without invalidating links.
+Source codes are available in same directory and you can download them. Maybe in future I&#39;ll put it under version control on github of source-forge.&lt;/p&gt;
+
+&lt;p&gt;PS : There&#39;s a golden tip for using this program, and that combining it with Clover. Clover is a program that makes default windows explorer like Chrome browser by giving you multiple tabs in same window. Whether you use Path navigator ( or as a like to call it, Panvig ) or not, I encourage you to &lt;a href=&quot;http://ejie.me/&quot;&gt;download Clover&lt;/a&gt;.&lt;img src=&quot;http://arashtaher.files.wordpress.com/2014/04/clover.png&quot; alt=&quot;clover&quot; /&gt;&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>Editing C# AST, Yet preserving its formatting</title>
+   <link href="http://en.arashTaher.ir/coding/2014/03/14/editing-code-whilst-preserving-its-formatting.html"/>
+   <updated>2014-03-14T14:34:43+03:30</updated>
+   <id>http://en.arashTaher.ir/coding/2014/03/14/editing-code-whilst-preserving-its-formatting</id>
+   <content type="html">&lt;p&gt;Earlier in one of my &lt;a href=&quot;http://arashtaher.wordpress.com/2013/09/27/prettyprint/&quot;&gt;posts&lt;/a&gt;, I explained how can you reformat your code using NRefactory library. But, as matter of fact what you really want in your day to day task is not reformatting code, au-contraire, you want its formatting to be preserved. You don&#39;t want to commit dozens of files to your repository merely because their formatting&#39;s changed !&lt;/p&gt;
+
+&lt;p&gt;Now this question arises that whether is this quest possible in NRefactory or not ? Well of course it is, and it&#39;s really easy. ( Once you know what you have to do, who you have to call and ... ) BTW, NRefactory is an essential part of SharpDevelop IDE and we don&#39;t want our idea to reformat our code every time we use intellisens.&lt;/p&gt;
+
+&lt;p&gt;NRefactory has a class that&#39;s dedicated to do such and it&#39;s called DocumentScript.&lt;/p&gt;
+
+&lt;p&gt;Document scripts works by manipulating IDocument objects, which are specialization of string builder class. This class gives you this opportunity to change your document based on text location that were already stored in syntax tree. It also keeps track of latest modification and map them to current document, so you don&#39;t have to worry about whether multiple changes on the same document will be applied correctly or not.&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-csharp&quot; data-lang=&quot;csharp&quot;&gt;&lt;span class=&quot;n&quot;&gt;IDocument&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;document&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;StringBuilderDocument&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;Your code source&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;CSharpFormattingOptions&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;policy&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;FormattingOptionsFactory&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;CreateAllman&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;();&lt;/span&gt;
+&lt;span class=&quot;kt&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;options&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;TextEditorOptions&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;();&lt;/span&gt;
+
+&lt;span class=&quot;kt&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;script&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;DocumentScript&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;document&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;policy&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;options&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;Now you can use methods like Replace, Remove, InsertAfter and etc. on you AST. It works with both AST nodes as well as offsets.
+&lt;a href=&quot;http://arashtaher.files.wordpress.com/2014/03/script.png&quot;&gt;&lt;img src=&quot;http://arashtaher.files.wordpress.com/2014/03/script.png?w=300&quot; alt=&quot;script&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Beside that, there are some predefined methods on scripts:&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-csharp&quot; data-lang=&quot;csharp&quot;&gt;&lt;span class=&quot;n&quot;&gt;script&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;ChangeModifier&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;declaration&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Modifiers&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Public&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+
+
+</content>
+ </entry>
+ 
+ <entry>
+   <title>What Wronge With RSS Readers</title>
+   <link href="http://en.arashTaher.ir/42/2014/03/11/what-wronge-with-rss-readers.html"/>
+   <updated>2014-03-11T23:01:47+03:30</updated>
+   <id>http://en.arashTaher.ir/42/2014/03/11/what-wronge-with-rss-readers</id>
+   <content type="html">&lt;p&gt;I&#39;m using Feedly on my tablet on a daily basis for checking weblogs, and I use Pocket to read them later.&lt;/p&gt;
+
+&lt;p&gt;Well, they&#39;re quite fast, you don&#39;t have to tolerate all those annoying ads, size of the contents to be downloaded decreases dramatically ( very important factor when you&#39;re limited to 4GB per month! ), and their much more legible.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://arashtaher.files.wordpress.com/2014/03/rss.jpg&quot;&gt;&lt;img src=&quot;http://arashtaher.files.wordpress.com/2014/03/rss.jpg&quot; alt=&quot;rss&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;But there&#39;s something that really bugs me : When you interact with websites and weblogs in this way, you can&#39;t socialize with other people that are reading the same content as you do. You can&#39;t see comments or post any. I mean, who bothers to reopen the site in browser to just see comments or post one ?
+The spirit of these readers are literally in contrast with what that every other app and program and company on the planet is investing on, connecting people with same taste and interests to each other.
+&lt;a href=&quot;http://arashtaher.files.wordpress.com/2014/03/ywnppk7.png&quot;&gt;&lt;img src=&quot;http://arashtaher.files.wordpress.com/2014/03/ywnppk7.png?w=145&quot; alt=&quot;ywnPPK7&quot; /&gt;&lt;/a&gt;For instance, although I hate Google plus interface ( and also Google plus itself ), but still I find it much more rewarding and enjoyable to follow news and people with it. It gives you this chance to be part of gathering of all people who care about the same thing as you.&lt;/p&gt;
+
+&lt;p&gt;IMHO, it&#39;s important that you have this ability to exchange and communicate with source website. Implementing this feature and  making it accessible can really be a big improvement among RSS readers. I assume the basic infrastructure for this capability &lt;a href=&quot;http://www.feedblitz.com/why-separate-rss-feeds-and-comments/&quot;&gt;already exist&lt;/a&gt;, So what are they waiting for ? Those guys really need to shake the dust off of their products !&lt;/p&gt;
+
+&lt;p&gt;PS : I must admit it&#39;s quite a controversial topic. For example I&#39;d like to refer to &lt;a href=&quot;https://feedly.uservoice.com/forums/192636-suggestions/suggestions/5430297-make-it-social-allow-comments-inside-feedly#comments&quot;&gt;this &quot;I suggest you ...&quot; page&lt;/a&gt; for Feedly.&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>Binary Operator Expressions</title>
+   <link href="http://en.arashTaher.ir/coding/2014/03/11/binary-operator-expressions.html"/>
+   <updated>2014-03-11T22:42:48+03:30</updated>
+   <id>http://en.arashTaher.ir/coding/2014/03/11/binary-operator-expressions</id>
+   <content type="html">&lt;p&gt;Suppose in a hypothetical scenario you want to reverse all binary operation in your file, and also you want them to be fully parenthesized. What would you do ?&lt;/p&gt;
+
+&lt;p&gt;One solution is using recursion which might be a little messy an unclear. Another solution to this problem can be achieved by taking advantage of binary operator expressions in NRefactory.
+Fortunately with NRefactory this operation is rather a trivial task. A little tricky, but still simple.
+You can use this feature to process any kind of binary operation and interpret it the way you like. ( like generating code )&lt;/p&gt;
+
+&lt;p&gt;First, let&#39;s create a test fixture for it ( Hooray ! Now you know what TDD is : )&lt;/p&gt;
+
+&lt;p&gt;[code language=&quot;csharp&quot;]
+[Test]
+public void BinaryVisitorTest()
+{
+    string input = &quot; a &gt; b || ( x &gt; y &amp;amp;&amp;amp; y &gt; z )&quot;;
+    var parser = new CSharpParser();
+    Expression expression = parser.ParseExpression(input);&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;var visitor = new BinaryOpVisitor();
+expression.AcceptVisitor(visitor);
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;}
+[/code]&lt;/p&gt;
+
+&lt;p&gt;Since we&#39;re interested in visiting an expression we don&#39;t bother by parsing a whole C# file, we give the parser our expression as text, and it gives use the expression as AST.
+In next step, we create a visitor class and visit binary and identifier expressions :&lt;/p&gt;
+
+&lt;p&gt;[code language=&quot;csharp&quot;]
+public class BinaryOpVisitor : DepthFirstAstVisitor
+{
+    public override void VisitBinaryOperatorExpression(BinaryOperatorExpression binaryOperatorExpression)
+    {
+        Console.Write(&quot;(&quot;);
+        binaryOperatorExpression.Right.AcceptVisitor(this);
+        Console.Write(binaryOperatorExpression.OperatorToken);
+        binaryOperatorExpression.Left.AcceptVisitor(this);
+        Console.Write(&quot;)&quot;);
+    }&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;public override void VisitIdentifierExpression(IdentifierExpression identifierExpression)
+{
+    Console.Write(identifierExpression.Identifier);
+    base.VisitIdentifierExpression(identifierExpression);
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;}
+[/code]&lt;/p&gt;
+
+&lt;p&gt;Be careful as opposed to what we do regularly in node visiting ( or actually what &lt;strong&gt;depth first&lt;/strong&gt; visiting is all about ), we didn&#39;t call base visitor in binary operator expression visitor.&lt;/p&gt;
+
+&lt;p&gt;Now, for this special case, the output will be :&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;(((z&amp;gt;y)&amp;amp;&amp;amp;(y&amp;gt;x))||(b&amp;gt;a))
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Easy peasy !&lt;/p&gt;
+
+&lt;p&gt;For readers with data structure background I&#39;d like to mention that what we did in here was actually an in-order visit of the nodes in AST. You can simply turn it into post/pre-order by putting base class call before/after your code in the visitor.&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>Recursive problems : Set partitioning</title>
+   <link href="http://en.arashTaher.ir/codes/en/2013/11/07/rec-set-part.html"/>
+   <updated>2013-11-07T16:38:48+03:30</updated>
+   <id>http://en.arashTaher.ir/codes/en/2013/11/07/rec-set-part</id>
+   <content type="html">&lt;p&gt;There&#39;s no doubt that recursion is one the most powerful, exciting, and yet difficult approaches for problem solving and as we all know, attacking a problem by this almighty tool, requires keen mind and craftsmanship in extracting a recursive structure; a subtle perspective that can only be acquired by constant practicing. (Reminds me of Pride and prejudice, have you read it ?)&lt;/p&gt;
+
+&lt;p&gt;One of the problems that I faced recently, was finding all the partitions of a set. A &lt;a href=&quot;http://mathworld.wolfram.com/SetPartition.html&quot;&gt;set partition&lt;/a&gt; of a set S is a collection of disjoint subsets of S whose union is S. Interesting fact is that after a few struggles in set domain problems, it becomes straightforward to find a way to deal with another one of them. It&#39;s mainly in &quot;One time choose it, one time don&#39;t&quot; fashion.
+BTW, this is my solution for this problem in Python.&lt;/p&gt;
+
+&lt;p&gt;[code language=&quot;python&quot;]&lt;/p&gt;
+
+&lt;h1&gt;Prints partitions of set : [1,2] -&gt; [[1],[2]], [[1,2]]&lt;/h1&gt;
+
+&lt;p&gt;def part(lst, current=[], final=[]):
+    if len(lst) == 0 :
+        if len(current) == 0:
+            print (final)
+        elif len(current) &gt; 1:
+            print ([current] + final)
+    else :
+        part(lst[1:], current + [lst[0]], final[:])
+        part(lst[1:], current[:], final + [[lst[0]]])[/code]&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>What is NuGet and How does it work?</title>
+   <link href="http://en.arashTaher.ir/2013/09/28/what-is-nuget-and-how-does-it-work/"/>
+   <updated>2013-09-28T00:00:00+03:30</updated>
+   <id>http://en.arashTaher.ir/2013/09/28/what-is-nuget-and-how-does-it-work</id>
+   <content type="html">&lt;p&gt;&lt;a href=&quot;1&quot;&gt;What is NuGet and How does it work?&lt;/a&gt;.
+A brief and concise introduction can for those who want to know more about .Net package manager.&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>PrettyPrint C# codes via NRefactory</title>
+   <link href="http://en.arashTaher.ir/coding/programming/2013/09/27/prettyprint.html"/>
+   <updated>2013-09-27T23:42:02+03:30</updated>
+   <id>http://en.arashTaher.ir/coding/programming/2013/09/27/prettyprint</id>
+   <content type="html">&lt;p&gt;Yet another code example via NRefactory. This time we intend to take advantage of reformatting capabilities in NRefactory library.&lt;/p&gt;
+
+&lt;p&gt;What does it mean ?  Well, when you become engage in Code generating activities, you usually don&#39;t want to be involved in details of code formatting, indentation and these kind of stuff. All you wanna do, is to concatenate some codes, one behind another and create you desired code. After you&#39;re done with your code, you may have a program in one line, with no indentation. This is where NRefactory steps in.
+It can take your code, and by considering tons of available options, automatically reformat your code. easy peasy !&lt;/p&gt;
+
+&lt;p&gt;I have created a rudimentary example of this operation that you can download from &lt;a href=&quot;http://ge.tt/6JuQk2o/v/3&quot;&gt;here&lt;/a&gt;. It&#39;s quite simple and straightforward.&lt;/p&gt;
+
+&lt;p&gt;PS : I&#39;ve uploaded binary files in &lt;a href=&quot;http://ge.tt/6JuQk2o/v/2&quot;&gt;here&lt;/a&gt;. In case you already download the previous sample, you don&#39;t need to download binary files again. Now all you have to do is to reference to these binary files to be able to build the project.&lt;/p&gt;
+
+&lt;p&gt;Oops ! I made an honest mistake and used Formatters. I&#39;ve applied changes and updated the code.
+Formatters are appropriate tools when you want to apply modifications in IDE ( like preserving correct indentation after copy-paste or when IDE fills some fields for you ).
+In our case, proper tool would be OutputVisitors. We create parse tree of out code, then visit it by CSharpOutputVisitor and ... Boom !&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>NRefactory : Front-end parser for C#</title>
+   <link href="http://en.arashTaher.ir/en/programming/2013/09/22/nrefactory-front-end-parser-for-c.html"/>
+   <updated>2013-09-22T09:50:16+03:30</updated>
+   <id>http://en.arashTaher.ir/en/programming/2013/09/22/nrefactory-front-end-parser-for-c</id>
+   <content type="html">&lt;p&gt;&lt;a href=&quot;https://github.com/icsharpcode/NRefactory&quot;&gt;NRefactroy&lt;/a&gt; is an open source library for parsing C# source codes, or more precisely a front-end parser for C#.
+It can parse your C# codes and provide you with an abstract syntax tree. It can also resolve this parse tree and give you semantic of nodes in the syntax tree.&lt;/p&gt;
+
+&lt;p&gt;What makes it more interesting is that the syntax tree produced by this framework is mutable, which means you can change it&#39;s node&#39;s contents; unlike other products, such as not-yet-stable &lt;a href=&quot;http://msdn.microsoft.com/en-us/vstudio/roslyn.aspx&quot;&gt;Microsoft® “Roslyn” CTP&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;You can use this library to change your source code, analyze it, or reformat it (pretty print);NRefactory project is actually a part of bigger project, &lt;a href=&quot;http://www.icsharpcode.net/opensource/sd/&quot;&gt;SharpDevelop&lt;/a&gt; : A free IDE for C#. SharpDevelop takes advantage of this library for IntelliSense implementation and some other stuff.&lt;/p&gt;
+
+&lt;p&gt;At the beginning, it may take a while till you become comfortable with representations, APIs and how to interpret and manipulate data structures. To start, take a look &lt;a href=&quot;http://www.codeproject.com/Articles/408663/Using-NRefactory-for-analyzing-Csharp-code&quot;&gt;this article&lt;/a&gt;, wrote by one the authors of NRefactory. In this prologue you can find all preliminary information you need to know in order to dive in.
+After that IMHO best practice is to fool around huge unit tests that exist in project itself. It&#39;ll be your best guide through all difficulties and misunderstandings ( there&#39;s about 3000 of theme! ).&lt;/p&gt;
+
+&lt;p&gt;I also wrote the simplest possible program with this library that you can download from &lt;a href=&quot;http://ge.tt/6JuQk2o/v/1?c&quot;&gt;here&lt;/a&gt;. The purpose of this program is only to show you how to glue all the things together and make it work.
+Enjoy Parsing.&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>Practitioner</title>
+   <link href="http://en.arashTaher.ir/articles/computer%20topics/2013/08/10/practitioner.html"/>
+   <updated>2013-08-10T14:29:10+04:30</updated>
+   <id>http://en.arashTaher.ir/articles/computer%20topics/2013/08/10/practitioner</id>
+   <content type="html">&lt;p&gt;Yesterday, I was finally honored to contribute to an open source project, NRefactory: Front-end parser for C#.
+Although, I have to admit I was only a helper through this journey; In fact at first I was totally reluctant to dive into thousands lines of code. After all, it’s still a bit scary &lt;img src=&quot;https://s0.wp.com/wp-includes/images/smilies/icon_smile.gif&quot; alt=&quot;:)&quot; /&gt;
+Anyway we did it, we found the problem and add our short piece of modification into the code.&lt;/p&gt;
+
+&lt;p&gt;But what was the dilemma ? The problem was an ambiguity in resolution when we had an object with same name as class name. In order to disambiguate it, parser looks to see whether method has a static modifier or not. Now, when we try to call an extension method from an object … Poof ! Parser thinks this object is the class and …&lt;/p&gt;
+
+&lt;p&gt;Well, all we had to do was to add another condition to check whether it’s an extension method or not. I was so thrilled and I impatiently wanted to recompile our program to see the results. But wait ! “Let’s not rush into it”, said the other guy. “First let’s to see what are it’s side effects.” We checked every occurrence of this method in the code to make sure this change doesn’t cause any malfunction. After that we ran the program and … it was working like a charm.&lt;/p&gt;
+
+&lt;p&gt;PS : Soon I’m gonna post a share about &lt;a href=&quot;http://arashthr.wordpress.com/2013/08/10/332/&quot;&gt;NRefactory &lt;/a&gt;library and how I’m using it in developing an aggressive obuscator for C#. So be prepared !&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>O brave new world</title>
+   <link href="http://en.arashTaher.ir/42/reading/2013/08/05/o-brave-new-world.html"/>
+   <updated>2013-08-05T01:51:04+04:30</updated>
+   <id>http://en.arashTaher.ir/42/reading/2013/08/05/o-brave-new-world</id>
+   <content type="html">&lt;p&gt;How many goodly creatures are there here
+How beautiful mankind is! O brave new world
+That has such people in&#39;t&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://arashthr.files.wordpress.com/2013/08/huxley2.jpg&quot; alt=&quot;![Image](http://arashthr.files.wordpress.com/2013/08/huxley2.jpg?w=240)&quot; /&gt;&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>Scheme REPL</title>
+   <link href="http://en.arashTaher.ir/codes/2013/07/18/scheme-repl.html"/>
+   <updated>2013-07-18T22:09:57+04:30</updated>
+   <id>http://en.arashTaher.ir/codes/2013/07/18/scheme-repl</id>
+   <content type="html">&lt;p&gt;A rudimentary implementation of a &lt;a href=&quot;http://en.wikipedia.org/wiki/Read%E2%80%93eval%E2%80%93print_loop&quot;&gt;REPL &lt;/a&gt;for Scheme programs in Python (as usual).  Descriptions for implementation has been taken from chapter 4 of SICP book. At it&#39;s core, it&#39;s merely an Eval, Apply cycle. &lt;a href=&quot;http://ge.tt/6UdsX7m/v/0&quot;&gt;Enjoy it&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://arashtaher.files.wordpress.com/2013/07/default.jpeg&quot;&gt;&lt;img src=&quot;http://arashtaher.files.wordpress.com/2013/07/default.jpeg&quot; alt=&quot;default&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>Structure and Interpretation of Computer Programs, SICP</title>
+   <link href="http://en.arashTaher.ir/articles/reading/2013/07/18/sicp.html"/>
+   <updated>2013-07-18T21:34:54+04:30</updated>
+   <id>http://en.arashTaher.ir/articles/reading/2013/07/18/sicp</id>
+   <content type="html">&lt;p&gt;In this semester I&#39;d took an optional course titled &quot;Declarative programming&quot;. I was so thrilled about it because of two reasons :&lt;/p&gt;
+
+&lt;p&gt;First of all, I&#39;d already been enchanted by the whole idea of functional and declarative programming since I was fooling around languages like Erlang, Haskell and Prolog (Although the last one is technically a logic programming language); Secondly, I was long to experience the presence in class of one of our well-known instructors, Dr. Towhidi.The reference book for this class was also notable, the renown Structure and Interpretation of Computer Programs ( or better known&lt;a href=&quot;http://arashtaher.files.wordpress.com/2013/07/sicp.jpg&quot;&gt;&lt;img src=&quot;http://arashtaher.files.wordpress.com/2013/07/sicp.jpg&quot; alt=&quot;SICP&quot; /&gt;&lt;/a&gt; as &lt;a href=&quot;mitpress.mit.edu/sicp/&quot;&gt;SICP&lt;/a&gt; ).
+Norvig is his famous must-read article,&lt;a href=&quot;http://norvig.com/21-days.html&quot;&gt; Learn programming in ten years&lt;/a&gt;, recommended this book for those who wants to choose computers as a life career.&lt;/p&gt;
+
+&lt;blockquote&gt;&quot;SICP is probably the best introduction to computer science, and it does teach programming as a way of understanding the computer science ... The book is challenging and will weed out some people who perhaps could be successful with another approach.&quot;&lt;/blockquote&gt;
+
+
+&lt;p&gt;This book may not make a almighty coder who can do some fancy stuff with just a couple of lines of codes (although in some chapters, it will), but it can teach you something far more valuable, Good habits in thinking and coding. It reminds me of a statement that one the pioneers in software engineering, Kent Beck says about himself : &quot;I&#39;m not a great programmer; I&#39;m just a good programmer with great habits.&quot;&lt;/p&gt;
+
+&lt;p&gt;The programming language used in this book is Scheme. It&#39;s some how old and incredibly small ( Parans, Blanks and lexemes are all the elements you have and a pair of data is the only data structure); Despite that it will amaze you when you see how complex tasks can be accomplished with such simple elements.&lt;/p&gt;
+
+&lt;p&gt;All these cool stuff can best accompanied with this fact that &lt;a href=&quot;https://class.coursera.org/progfun-002/&quot;&gt;Coursera &lt;/a&gt;presented a course in functional programming that it&#39;s syllabus is based on this book; The only difference is that this course has chosen Scala programming language over Scheme, which is much more sophisticated and has a rise in usage. (It supports OO programming )&lt;/p&gt;
+
+&lt;p&gt;Final word : Don&#39;t miss the chance if you have this opportunity to attend a class that teaches this book, or if you have enough time and and know yourself as a guy with iron determination, try to take the course on Coursera. Unfortunately in my opinion it&#39;s not a book that you can get the best of it by reading by yourself.&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>Prolog : How to implement if-then structure</title>
+   <link href="http://en.arashTaher.ir/programming/2012/08/13/prolog-if-then.html"/>
+   <updated>2012-08-13T01:00:06+04:30</updated>
+   <id>http://en.arashTaher.ir/programming/2012/08/13/prolog-if-then</id>
+   <content type="html">&lt;p&gt;How to implement if-then-else in prolog ?
+This was a question posted on stack overflow and I though it might be good to say a few words about ot in here.&lt;/p&gt;
+
+&lt;p&gt;There is nothing as if or else in a logical programming languages, all you have is some stupid rules and facts :) and you job as a programmer in this environment is not to tell the language how to do the thing ( if foo then bar ), but to describe the problem. You state some facts, establish some rules and based on that ( unification ) the language interpreter will search and find the solutions for any given problem that fits into your description ( backtrack ).&lt;/p&gt;
+
+&lt;p&gt;Suppose we want to find the union of two sets . How do we make decisions ? let&#39;s see :&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-prolog&quot; data-lang=&quot;prolog&quot;&gt;&lt;span class=&quot;nf&quot;&gt;union&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[],&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;X&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;X&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;).&lt;/span&gt;
+&lt;span class=&quot;nf&quot;&gt;union&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;H&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;|&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;T&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;],&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;X&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;List&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;:-&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;member&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;H&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;X&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;),&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;union&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;T&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;X&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;List&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;),&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;!.&lt;/span&gt;
+&lt;span class=&quot;nf&quot;&gt;union&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;H&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;|&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;T&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;],&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;X&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;H&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;|&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;List&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;:-&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;union&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;T&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;X&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;List&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;).&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;You can see we did not use conditions, we just setup different ruls for different conditions.&lt;/p&gt;
+
+&lt;p&gt;As another example take a look at this code . In here we want to exclude all the elements of the first list from the second one. We have no condition :&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-prolog&quot; data-lang=&quot;prolog&quot;&gt;&lt;span class=&quot;nf&quot;&gt;diffLst&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;_&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[],&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[]&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;).&lt;/span&gt;
+&lt;span class=&quot;nf&quot;&gt;diffLst&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[],&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;X&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;X&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;).&lt;/span&gt;
+&lt;span class=&quot;nf&quot;&gt;diffLst&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;H&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;|&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;T&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;],&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;H&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;|&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;Rest&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;],&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;Result&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;:-&lt;/span&gt;
+  &lt;span class=&quot;nf&quot;&gt;diffLst&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;T&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;Rest&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;Result&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;).&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;% Ignore same items&lt;/span&gt;
+&lt;span class=&quot;nf&quot;&gt;diffLst&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;Exc&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;I&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;|&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;Rest&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;],&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;I&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;|&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;Result&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;:-&lt;/span&gt;
+  &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;H&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;|&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;_&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;Exc&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;H&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;I&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;diffLst&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;Exc&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;Rest&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;Result&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;).&lt;/span&gt;
+&lt;span class=&quot;nf&quot;&gt;diffLst&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;H&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;|&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;T&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;],&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;Inc&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;Result&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;:-&lt;/span&gt;
+  &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;I&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;|&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;_&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;Inc&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;H&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;I&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;diffLst&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;T&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;Inc&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;Result&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;).&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;That&#39;s the stuff, isn&#39;t it ?&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>BashTertainment</title>
+   <link href="http://en.arashTaher.ir/linux/2012/08/08/bashtertainment.html"/>
+   <updated>2012-08-08T06:23:07+04:30</updated>
+   <id>http://en.arashTaher.ir/linux/2012/08/08/bashtertainment</id>
+   <content type="html">&lt;p&gt;There&#39;s nothing out there that can be considered as a worthy replacement for bash. The power it gives you is so enormous that it takes year for someone to become a real proficient.&lt;/p&gt;
+
+&lt;p&gt;I&#39;m not an expert in terminal at all, but still I enjoy it in some levels. These are some of the commands combinations that found much more interesting during past days, worth to give a glance :
+How to select and sort mp3 musics ( or any other regular expression you desire ) in a messy directory and pipe them into totem player :&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;find -iname &#39;*.mp3&#39; | sort -n | xargs -d &#39;n&#39; totem &amp;amp;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;How to search in specific column of a file ( like output of objdump -t ) and select qualified line :&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;awk {if ($4==&quot;.data&quot; || ($3==&quot;F&quot; &amp;amp;&amp;amp; $4==&quot;.text&quot;) ) {print $0} } [filename]
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;This one can be very helpful. You hvae visited a web page saw some videos on it. now you want to watch them again. go to .mozila or .cache ( for chromium ) directoy and then enter :&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;find -size +5M -exec cp {} ~/Videos ;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;( For more options, like creation date filters, visit find man page )&lt;/p&gt;
+
+&lt;p&gt;How to pipe the output of command into vim :&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;... | vim -
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Create a boot-able flash disk from a iso installation file ( Notice : use &lt;code&gt;sudo fdisk -l&lt;/code&gt; to make sure you copy your iso file into correct destination )&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;sudo dd if=~/Desktop/ubuntu12.04.iso of=[/dev/sdb] oflag=direct bs=1048576
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Alright ! that&#39;s enough for today. maybe we continue this later :)&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>Bomb defusing</title>
+   <link href="http://en.arashTaher.ir/programming/2012/08/07/lets-defuse-that-bomb.html"/>
+   <updated>2012-08-07T04:11:11+04:30</updated>
+   <id>http://en.arashTaher.ir/programming/2012/08/07/lets-defuse-that-bomb</id>
+   <content type="html">&lt;p&gt;In &lt;a href=&quot;http://csapp.cs.cmu.edu/public/bomb.tar&quot;&gt;here&lt;/a&gt;, we have executable file of a bomb. you&#39;re mission is to defuse the bomb by enrtering correct keyword required in each phase. There&#39;s total of 6 phases plus ...&lt;/p&gt;
+
+&lt;p&gt;It helps you to learn how to use gdb and objdump in Linux, also gives you a great intuition about how doses gcc compiles you program.&lt;/p&gt;
+
+&lt;p&gt;This program has been taken from &lt;a href=&quot;http://csapp.cs.cmu.edu/public/labs.html&quot;&gt;here&lt;/a&gt;. genuinely it was a practice for the book. ( quite interesting book, can help you a lot if you want to go deep in computers. )&lt;/p&gt;
+
+&lt;p&gt;Here&#39;s some links that might help you to start your journey :
+&lt;a href=&quot;http://www.unknownroad.com/rtfm/gdbtut/gdbtoc.html&quot;&gt;RMS&#39;s gdb Debugger Tutorial&lt;/a&gt;
+&lt;a href=&quot;http://www.youtube.com/watch?v=twxEVeDceGw&quot;&gt;An introductory video to gdb&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://newsimg.bbc.co.uk/media/images/47434000/jpg/_47434056_008856877-1.jpg&quot; alt=&quot;http://newsimg.bbc.co.uk/media/images/47434000/jpg/_47434056_008856877-1.jpg&quot; /&gt;&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>A simple scheduler in Python</title>
+   <link href="http://en.arashTaher.ir/codes/2012/07/27/a-simple-scheduler-in-python.html"/>
+   <updated>2012-07-27T04:39:23+04:30</updated>
+   <id>http://en.arashTaher.ir/codes/2012/07/27/a-simple-scheduler-in-python</id>
+   <content type="html">&lt;p&gt;Here&#39;s a simple scheduler simulator in Python that you can download from &lt;a href=&quot;http://ge.tt/27PfW5L/v/0?c&quot;&gt;here&lt;/a&gt;.
+You give it a list of processes and scheduling algorithm you want to be used for scheduling and as result you get a simple output like this which shows you the sequence of the processes running in intervals :&lt;/p&gt;
+
+&lt;p&gt;System starts up
+002.000: Algorithm SPN is in use
+004.000: Process 001 Created
+004.000: Process 001 -&gt; readyQ
+004.000: Process 001 -&gt; CPU
+006.100: Algorithm MLFQ is in use
+007.300: Process 002 -&gt; swaped out
+...&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://lifewithoutbuildings.net/wordpress/wp-content/uploads/2009/09/chaplin_3.jpg&quot; alt=&quot;http://lifewithoutbuildings.net/wordpress/wp-content/uploads/2009/09/chaplin_3.jpg&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;This program is interesting in several aspects :
+Firstly it helps you to grasp ideas behind scheduling algorithms in OS,
+Secondly it take advantages of threading to simulate IO operations,
+Also it reads it&#39;s input from an XML file, worth to take a look,
+And finally it&#39;s in Python ...&lt;/p&gt;
+
+&lt;p&gt;Unfortunately because of lack of enough time for this project, it&#39;s not as beautiful as I liked, but as a proverb says, &quot;Something is (most of the times) better than nothing&quot; :)&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>Concurrency problems</title>
+   <link href="http://en.arashTaher.ir/codes/2012/06/10/concurrency-problems.html"/>
+   <updated>2012-06-10T20:53:26+04:30</updated>
+   <id>http://en.arashTaher.ir/codes/2012/06/10/concurrency-problems</id>
+   <content type="html">&lt;p&gt;In this semester I&#39;ve taken a course in Concurrency . One of the most delightful courses I ever taken .&lt;/p&gt;
+
+&lt;p&gt;As exercise, I started to work on some classical and less-classical problems on concurrency from &quot;&lt;a href=&quot;www.greenteapress.com/semaphores/&quot;&gt;A little book on semaphores&lt;/a&gt;&quot; by Daweny . the result of my attempts is a bunch codes in Python ( and one in C ) which you can download from &lt;a href=&quot;http://ge.tt/8gpNhuI/v/0?c&quot;&gt;here&lt;/a&gt; .&lt;/p&gt;
+
+&lt;p&gt;The solved problems include :
+Producer-Consumer problem ( also available in C ),
+Dining philosophers,
+Dining Savages,
+River crossing problem and
+Barbershop problem .&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://www.google.com/imgres?start=84&amp;amp;num=10&amp;amp;hl=en&amp;amp;client=ubuntu&amp;amp;hs=GMN&amp;amp;channel=cs&amp;amp;biw=1280&amp;amp;bih=681&amp;amp;tbm=isch&amp;amp;tbnid=4JOf8bPsHizToM:&amp;amp;imgrefurl=http://forum.blu-ray.com/showthread.php%3Ft%3D73544&amp;amp;docid=PuzSnxZxAF37XM&amp;amp;imgurl=http://www.dvdbeaver.com/film2/DVDReviews42/sweeney%252520todd%252520blu-ray/large/large%252520sweeney%252520todd%252520%252520blu-ray5.jpg&amp;amp;w=1920&amp;amp;h=1080&amp;amp;ei=kYzUT4XZAaKj4gTd3-DEAw&amp;amp;zoom=1&amp;amp;iact=hc&amp;amp;vpx=537&amp;amp;vpy=286&amp;amp;dur=829&amp;amp;hovh=168&amp;amp;hovw=300&amp;amp;tx=124&amp;amp;ty=113&amp;amp;sig=114876208020108935685&amp;amp;page=5&amp;amp;tbnh=156&amp;amp;tbnw=212&amp;amp;ndsp=24&amp;amp;ved=1t:429,r:3,s:84,i:14&quot;&gt;&lt;img src=&quot;https://encrypted-tbn3.google.com/images?q=tbn:ANd9GcSCzUxk0pBX8Vn0TyAwOTOu42ckWnhiOXIuR8N4BVYheR8431hTQw&quot; alt=&quot;&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Any kinds of contributions, including correction and improvement regarded :)&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>An introdunction to Virtual Memory</title>
+   <link href="http://en.arashTaher.ir/computer%20topics/links/2012/06/10/vm-resource.html"/>
+   <updated>2012-06-10T19:56:36+04:30</updated>
+   <id>http://en.arashTaher.ir/computer%20topics/links/2012/06/10/vm-resource</id>
+   <content type="html">&lt;p&gt;I myself had some problems to grasp what virtual memory is and how it manages memory . after a lots of reading and surfing I found these resources much more comprehensive than others .
+So if you want to start to know what is virtual memory, page table , TLB and etc. I recommend to check out these websites :&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://pages.cs.wisc.edu/~solomon/cs537/html/paging.html&quot;&gt;A conscious overview on VM
+What is happening underneath
+VM in detail&lt;/a&gt; ( Highly recommended )&lt;/p&gt;
+
+&lt;p&gt;Another resource that might come in handy is a series of videos by Dr. Murphy which is available on &lt;a href=&quot;http://www.youtube.com/watch?v=Vw1B-U0Frws&amp;amp;feature=BFa&amp;amp;list=SP56B156F5D73BBD77&quot;&gt;Youtube&lt;/a&gt; .&lt;/p&gt;
+
+&lt;p&gt;You may also find a bunch of tutorials about OS ( including Memory management, kernel programming and ... ) in &lt;a href=&quot;http://www.osdever.net/tutorials/index&quot;&gt;here&lt;/a&gt; .&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>Socket Programmin in C</title>
+   <link href="http://en.arashTaher.ir/codes/2012/01/29/socket-programmin-in-c.html"/>
+   <updated>2012-01-29T20:41:54+03:30</updated>
+   <id>http://en.arashTaher.ir/codes/2012/01/29/socket-programmin-in-c</id>
+   <content type="html">&lt;p&gt;How to create and use sockets in C.
+A fully documented program which also uses forking to handle multiple connections.
+Can be also interesting for python programmers , there&#39;s so much in common.&lt;/p&gt;
+
+&lt;p&gt;You can download it &lt;a href=&quot;http://ge.tt/9gIjstC&quot;&gt;here&lt;/a&gt;
+Based on : &lt;a href=&quot;http://beej.us/guide/bgipc/&quot;&gt;Beej&#39;s Guide to Unix Interprocess Communication&lt;/a&gt;.&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>P2P in Python</title>
+   <link href="http://en.arashTaher.ir/codes/2012/01/29/p2p-in-python.html"/>
+   <updated>2012-01-29T20:31:37+03:30</updated>
+   <id>http://en.arashTaher.ir/codes/2012/01/29/p2p-in-python</id>
+   <content type="html">&lt;p&gt;A simple p2p program which uses multi-thread and broadcasting.
+Fully documented and in Python programming Language.&lt;/p&gt;
+
+&lt;p&gt;you can get it &lt;a href=&quot;http://ge.tt/8V0krtC&quot;&gt;here&lt;/a&gt;.&lt;/p&gt;
+</content>
+ </entry>
+ 
+ 
+</feed>

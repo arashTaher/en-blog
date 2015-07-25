@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en-us">
+<head>
+   <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+   <title>Binary Operator Expressions</title>
+   <meta name="author" content="Arash Taher" />
+   <!-- <link href="http://feeds.feedburner.com/tom-preston-werner" rel="alternate" title="Tom Preston-Werner" type="application/atom+xml" /> -->
+
+   <!-- syntax highlighting CSS -->
+   <link rel="stylesheet" href="/css/syntax.css" type="text/css" />
+
+   <!-- Homepage CSS -->
+   <link rel="stylesheet" href="/css/screen.css" type="text/css" media="screen, projection" />
+</head>
+<body>
+
+<div class="site">
+  <div class="title">
+    <a href="http://arashTaher.ir">Arash Taher</a>
+    <a href="http://fa.arashTaher.ir" class="extra">Fa</a>
+    <a href="http://en.arashTaher.ir" class="extra">En</a>
+  </div>
+  
+  <h1>Binary Operator Expressions</h1>
+
+<div id="post">
+	<p>Suppose in a hypothetical scenario you want to reverse all binary operation in your file, and also you want them to be fully parenthesized. What would you do ?</p>
+
+<p>One solution is using recursion which might be a little messy an unclear. Another solution to this problem can be achieved by taking advantage of binary operator expressions in NRefactory.
+Fortunately with NRefactory this operation is rather a trivial task. A little tricky, but still simple.
+You can use this feature to process any kind of binary operation and interpret it the way you like. ( like generating code )</p>
+
+<p>First, let's create a test fixture for it ( Hooray ! Now you know what TDD is : )</p>
+
+<p>[code language="csharp"]
+[Test]
+public void BinaryVisitorTest()
+{
+    string input = " a > b || ( x > y &amp;&amp; y > z )";
+    var parser = new CSharpParser();
+    Expression expression = parser.ParseExpression(input);</p>
+
+<pre><code>var visitor = new BinaryOpVisitor();
+expression.AcceptVisitor(visitor);
+</code></pre>
+
+<p>}
+[/code]</p>
+
+<p>Since we're interested in visiting an expression we don't bother by parsing a whole C# file, we give the parser our expression as text, and it gives use the expression as AST.
+In next step, we create a visitor class and visit binary and identifier expressions :</p>
+
+<p>[code language="csharp"]
+public class BinaryOpVisitor : DepthFirstAstVisitor
+{
+    public override void VisitBinaryOperatorExpression(BinaryOperatorExpression binaryOperatorExpression)
+    {
+        Console.Write("(");
+        binaryOperatorExpression.Right.AcceptVisitor(this);
+        Console.Write(binaryOperatorExpression.OperatorToken);
+        binaryOperatorExpression.Left.AcceptVisitor(this);
+        Console.Write(")");
+    }</p>
+
+<pre><code>public override void VisitIdentifierExpression(IdentifierExpression identifierExpression)
+{
+    Console.Write(identifierExpression.Identifier);
+    base.VisitIdentifierExpression(identifierExpression);
+}
+</code></pre>
+
+<p>}
+[/code]</p>
+
+<p>Be careful as opposed to what we do regularly in node visiting ( or actually what <strong>depth first</strong> visiting is all about ), we didn't call base visitor in binary operator expression visitor.</p>
+
+<p>Now, for this special case, the output will be :</p>
+
+<pre><code>(((z&gt;y)&amp;&amp;(y&gt;x))||(b&gt;a))
+</code></pre>
+
+<p>Easy peasy !</p>
+
+<p>For readers with data structure background I'd like to mention that what we did in here was actually an in-order visit of the nodes in AST. You can simply turn it into post/pre-order by putting base class call before/after your code in the visitor.</p>
+
+</div>
+
+<div id="related">
+  <h2>Related Posts</h2>
+  <ul class="posts">
+    
+      <li><span>28 Sep 2014</span> &raquo; <a href="/coding/en/programming/software%20engineering/2014/09/28/essential-skills.html">Essential skills that we didn't learn in university</a></li>
+    
+      <li><span>02 Apr 2014</span> &raquo; <a href="/codes/2014/04/02/path-navigator.html">Path Navigator</a></li>
+    
+      <li><span>14 Mar 2014</span> &raquo; <a href="/coding/2014/03/14/editing-code-whilst-preserving-its-formatting.html">Editing C# AST, Yet preserving its formatting</a></li>
+    
+  </ul>
+</div>
+
+  
+  <div class="footer">
+    <div class="contact">
+      <p>
+        Arash Taher<br />
+      </p>
+    </div>
+    <div class="contact">
+      <p>
+        <a href="http://github.com/arashTaher/">Github</a><br />
+        <a href="http://twitter.com/arash_taher/">Twitter</a><br />
+        <a href="http://plus.goolge.com/+arashTaher">Google plus</a><br />
+      </p>
+    </div>
+    <div class="rss">
+		<!-- <a href="http://feeds.feedburner.com/tom-preston-werner"> <img src="/images/rss.png" alt="Subscribe to RSS Feed" /> </a> -->
+    </div>
+  </div>
+</div>
+
+	<a href="https://github.com/arashTaher"><img style="position: absolute; top: 0; left: 0; border: 0;" src="https://camo.githubusercontent.com/c6286ade715e9bea433b4705870de482a654f78a/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f6c6566745f77686974655f6666666666662e706e67" alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_left_white_ffffff.png"></a>
+</body>
+</html>
