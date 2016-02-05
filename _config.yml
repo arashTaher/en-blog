@@ -1,3 +1,27 @@
-markdown: rdiscount
-highlighter: pygments
+title: Arash's Personal blog
+description: Another blog on technology
 
+url: http://en.arashtaher.ir
+baseurl: ""
+paginate_path: "blog/page:num/"
+permalink: blog/:title/
+
+markdown: kramdown
+highlighter: pygments
+gems: [jekyll-paginate]
+paginate: 6
+
+navigation:
+ - title: Home
+   url: /index.html
+ - title: About
+   url: /about
+ - title: Contact
+   url: /contact
+
+social:
+   github: arashtaher
+   twitter: arash_taher
+   email: arashtaherk@gmail.com
+
+google_analytics: "UA-65578399-1"
